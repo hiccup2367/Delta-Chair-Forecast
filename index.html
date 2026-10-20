@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chair Forecast</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Chair Forecast, start over">
+      <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
+        <path class="delta-outer" d="M60 14 L106 94 L14 94 Z"/>
+        <path class="delta-inner" d="M60 50 L77 80 L43 80 Z"/>
+      </svg>
+      <span class="brand-name">Chair Forecast</span>
+    </a>
+    <span class="brand-by">by Delta Consulting</span>
+    <span class="local-badge" title="Nothing you load here is sent over the internet.">
+      <span class="dot" aria-hidden="true"></span>Running on this computer
+    </span>
+  </header>
+
+
+  <main id="app" tabindex="-1">
+    <!-- Screens are rendered by app.js. This fallback shows if scripts are blocked. -->
+    <section class="screen">
+      <p class="lede">Chair Forecast needs JavaScript turned on in this browser.</p>
+    </section>
+  </main>
+
+  <div class="drop-veil" id="dropVeil" hidden>
+    <div class="drop-veil-inner">
+      <svg viewBox="0 0 120 120" class="veil-mark" aria-hidden="true"><path class="delta-outer" d="M60 14 L106 94 L14 94 Z"/><path class="delta-inner" d="M60 50 L77 80 L43 80 Z"/></svg>
+      <p>Let go to analyze this file</p>
+    </div>
+  </div>
+
+  <aside class="drawer" id="settings" hidden aria-labelledby="settingsTitle" role="dialog" aria-modal="true"></aside>
+
+  <script src="render.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

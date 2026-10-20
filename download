@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# Never commit real practice data or lookup files.
+*.xlsx
+*.xls
+patient-key*.csv
+call-list*.csv
+real_data/
+private/
+!data/sample_*.csv
+
+# OS
+.DS_Store
+Thumbs.db
